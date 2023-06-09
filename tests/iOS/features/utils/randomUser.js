@@ -1,25 +1,26 @@
-function randomEmail() {
+function email() {
     const characters = 'abcdefghijklmnopqrstuvwxyz0123456789';
-    let email = '';
-    for (let i = 0; i < 10; i++) {
+    var email = '';
+    for (var i = 0; i < 10; i++) {
       email += characters.charAt(Math.floor(Math.random() * characters.length));
     }
     email += '@example.com';
     return email;
 }
   
-function randomPassword() {
+function password() {
     const characters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
-    let password = '';
-    for (let i = 0; i < 8; i++) {
+    var password = '';
+    for (var i = 0; i < 8; i++) {
         password += characters.charAt(Math.floor(Math.random() * characters.length));
     }
     return password;
 }
   
-output.random_user = {
-    username : randomEmail(),
-    password : randomPassword()
-}
+  output.randomUser = {
+    email: email(),
+    password: password()
+  };
+
 
  
