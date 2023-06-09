@@ -1,0 +1,10 @@
+appId: nl.nrc.nrcapp
+---
+- runFlow: "main/check-main-screen.yaml"
+- runFlow: "navigation/navigation-top-bar.yaml"
+- runFlow: "login/login-right-credentials.yaml"
+- runFlow: "settings/check-settings-registered-user.yaml"
+- scrollUntilVisible:
+    element:
+      "U bent ingelogd als"
+    direction: UP

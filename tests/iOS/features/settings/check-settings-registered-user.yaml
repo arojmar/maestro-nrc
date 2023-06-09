@@ -1,0 +1,60 @@
+appId: nl.nrc.nrcapp
+---
+- clearKeychain
+- assertVisible: "Algemeen"
+- assertVisible: "Tekstgrootte instellen"
+- assertVisible: "Donkere modus"
+- assertVisible:
+    id: "DisclosureIndicator"
+    index: 0
+- assertVisible: "Starten op 'Nieuws' pagina"
+- assertVisible:
+    text: "1"
+    index: 0
+- assertVisible: "Notificaties"
+- assertVisible: "Urgent nieuws"
+- assertVisible:
+    text: "1"
+    index: 1
+- assertVisible: "Het beste van NRC"
+- assertVisible:
+    text: "0"
+    index: 0
+- assertVisible: "Beschikbaarheid krant"
+- assertVisible:
+    text: "1"
+    index: 2
+- assertVisible: "Volgonderwerpen"
+- assertVisible:
+    id: "DisclosureIndicator"
+    index: 1
+- assertVisible: "Privacy"
+- assertVisible: "Bewaartermijn mijn geschiedenis"
+- assertVisible:
+    id: "DisclosureIndicator"
+    index: 2
+- assertVisible: "Verwijder mijn geschiedenis"
+- assertVisible: "Krant"
+- assertVisible: "Automatisch verwijderen"
+- assertVisible:
+    id: "DisclosureIndicator"
+    index: 3
+- assertVisible: "Mobiele data voor downloaden"
+- assertVisible:
+    text: "0"
+    index: 1
+- assertVisible: "Toon artikelen altijd in tekstmodus"
+- assertVisible:
+    text: "0"
+    index: 2
+- scrollUntilVisible:
+    element: "Service"
+- assertVisible: "Vernieuwingen in deze app"
+- assertVisible:
+    id: "DisclosureIndicator"
+    index: 4
+- assertVisible: "Klantenservice"
+- assertVisible:
+    id: "DisclosureIndicator"
+    index: 5
+- assertVisible: "Probleem met de app"

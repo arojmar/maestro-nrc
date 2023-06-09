@@ -1,0 +1,39 @@
+appId: nl.nrc.nrcapp
+---
+- assertVisible: "Notificaties"
+- assertVisible: "Urgent nieuws"
+- assertVisible:
+    text: "1"
+    index: 1
+- tapOn:
+    text: "1"
+    index: 1
+- assertVisible:
+    text: "0"
+    index: 1
+- tapOn:
+    text: "0"
+    index: 1
+- assertVisible: "Het beste van NRC"
+- assertVisible: 
+    text: "0"
+    index: 0
+- tapOn:
+    text: "0"
+    index: 0
+- assertVisible:
+    text: "1"
+    index: 0
+- tapOn:
+    text: "1"
+    index: 0
+- assertVisible: "Beschikbaarheid krant"
+- assertVisible:
+    text: "1"
+    index: 2
+- tapOn:
+    text: "1"
+    index: 2
+- assertVisible:
+    text: "0"
+    index: 2
