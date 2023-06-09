@@ -22,7 +22,7 @@ appId: nl.nrc.nrcapp
     index: 0
 - assertVisible: "Beschikbaarheid krant"
 - assertVisible:
-    text: "1"
+    text: "0"
     index: 2
 - assertVisible: "Volgonderwerpen"
 - assertVisible:

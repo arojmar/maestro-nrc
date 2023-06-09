@@ -1,32 +1,33 @@
 appId: nl.nrc.nrcapp
 ---
+# Check the notifications section
 - assertVisible: "Notificaties"
 - assertVisible: "Urgent nieuws"
+
+# Assert the first toggle is enabled
 - assertVisible:
     text: "1"
     index: 1
+
+# Change status of the toggle button - disabled
 - tapOn:
     text: "1"
     index: 1
+
+# Check the new status is disabled (and repeat for the rest of the toggle buttons)
 - assertVisible:
     text: "0"
-    index: 1
-- tapOn:
-    text: "0"
-    index: 1
+    index: 0
 - assertVisible: "Het beste van NRC"
 - assertVisible: 
     text: "0"
-    index: 0
+    index: 1
 - tapOn:
     text: "0"
-    index: 0
+    index: 1
 - assertVisible:
     text: "1"
-    index: 0
-- tapOn:
-    text: "1"
-    index: 0
+    index: 1
 - assertVisible: "Beschikbaarheid krant"
 - assertVisible:
     text: "1"
@@ -36,4 +37,26 @@ appId: nl.nrc.nrcapp
     index: 2
 - assertVisible:
     text: "0"
-    index: 2
+    index: 1
+
+# Click in arrow to open the menu
+- tapOn:
+    id: "DisclosureIndicator"
+    index: 1
+
+# Check elements are present as expected
+- assertVisible: "Volgonderwerpen"
+- assertVisible: "Direct bij verschijning"
+- assertVisible: "Dagelijkse bundel"
+- assertVisible: "Nooit"
+- assertVisible: "checkmark"
+
+# Check the selection of different options
+- tapOn: "Direct bij verschijning"
+- tapOn: "Dagelijkse bundel"
+- tapOn: "Nooit"
+
+# Click on back arrow and check that it returns to settings main menu
+- tapOn: "Instellingen"
+- assertVisible: "Instellingen"
+

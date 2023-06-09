@@ -40,30 +40,9 @@ appId: nl.nrc.nrcapp
 - assertVisible: "Leven"
 - assertVisible: "Boeken"
 - assertNotVisible: "Opinie"
-- swipe:
-    direction: "RIGHT"
-- swipe:
-    direction: "RIGHT"
-- swipe:
-    direction: "RIGHT"
-- swipe:
-    direction: "RIGHT"
-- swipe:
-    direction: "RIGHT"
-- swipe:
-    direction: "RIGHT"
-- swipe:
-    direction: "RIGHT"
-- swipe:
-    direction: "RIGHT"
-- swipe:
-    direction: "RIGHT"
-- swipe:
-    direction: "RIGHT"
-- swipe:
-    direction: "RIGHT"
-- swipe:
-    direction: "RIGHT"
-- swipe:
-    direction: "RIGHT"
-- assertVisible: "Nieuws"
+- repeat:
+    while:
+        notVisible: "Nieuws"
+    commands:
+        - swipe:
+            direction: "RIGHT"
