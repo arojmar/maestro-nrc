@@ -1,0 +1,8 @@
+appId: nl.nrc.nrcapp
+---
+- assertVisible: "roeland.weve+qatesting@pinch.nl"
+- tapOn: "Uitloggen"
+- tapOn: "Log uit"
+- assertVisible: "U bent niet ingelogd"
+- assertNotVisible: "roeland.weve+qatesting@pinch.nl"
+- assertVisible: "Inloggen"

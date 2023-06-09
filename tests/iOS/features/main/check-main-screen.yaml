@@ -1,0 +1,32 @@
+appId: nl.nrc.nrcapp
+---
+- clearKeychain
+- launchApp:
+    clearState: true
+- tapOn:
+    id: loginButton
+- tapOn:
+    id: skipButton
+- assertVisible:
+    id: "searchButton"
+- assertVisible:
+    id: "NRC_Digitale_Editie.LiveNewsView"
+- assertVisible: "Tabbladbalk"
+- assertVisible:
+    id: "settingsButton"
+- assertVisible:
+    id: "NRC_Digitale_Editie.LiveNewsView"
+- assertVisible: "Nieuws"
+- assertVisible: "Meest gelezen"
+- assertVisible: "Binnenland"
+- assertVisible: "Buitenland"
+- assertVisible:
+    id: "ArticleNode 0-0"
+- assertVisible:
+    id: "tabBarItemNews"
+- assertVisible:
+    id: "tabBarItemPodcasts"
+- assertVisible:
+    id: "tabBarItemNews"
+- assertVisible:
+    id: "tabBarItemPodcasts"

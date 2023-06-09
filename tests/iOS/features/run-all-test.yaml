@@ -1,0 +1,6 @@
+appId: nl.nrc.nrcapp
+---
+- runFlow: "main/check-main-screen.yaml"
+- runFlow: "login/login-right-credentials.yaml"
+- runFlow: "logout/logout-registered-user.yaml"
+- runFlow: "login/login-wrong-credentials.yaml"
