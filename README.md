@@ -25,4 +25,9 @@ In other cases, that is needed a video to check what it is happening visually du
 
  Currently, it has been uploaded to **maestro cloud**, but under my personal account, so in case that it is wanted to use this cloud tool, it will be necessary to create an account for this purpose. In anycase, below please find attached an screenshot of how it is behaving into the maestro cloud:
 
- 
+
+
+ Conclusions regarding to Maestro:
+ - I would like to say that it is a really un painful tool for the mobile testing. It is really easy to start to automatize, overall when you use the **maestro studio**, what is the similar tool as appium studio, but skipping the problems related to desired capabilities. Even, when you need, as a developer, to identify quickly in which part of the app the IDs are missing, it gives you a really quick way to find it through the maestro studio. Powerful, light weight and easy to learn are the best description for it.
+
+- In other hands, it it true that the framework needs more time to mature to be the definitive tools, because it shows a lack of integration with real devices, or with cross-browsing platforms (as browserstack, saucelabs, etc.) and the cloud solution is paid only.
