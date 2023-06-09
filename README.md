@@ -25,6 +25,11 @@ In other cases, that is needed a video to check what it is happening visually du
 
  Currently, it has been uploaded to **maestro cloud**, but under my personal account, so in case that it is wanted to use this cloud tool, it will be necessary to create an account for this purpose. In anycase, below please find attached an screenshot of how it is behaving into the maestro cloud:
 
+
+<img width="1648" alt="image" src="https://github.com/arojmar/maestro-nrc/assets/31315473/55700e5e-6cd3-4cf9-9fa0-033b5385e080">
+<img width="1123" alt="image" src="https://github.com/arojmar/maestro-nrc/assets/31315473/b9cb24f6-ea10-4370-b8ca-e9413326eff9">
+<img width="1110" alt="image" src="https://github.com/arojmar/maestro-nrc/assets/31315473/6ed86d42-1751-4563-b6d0-219760a81b89">
+
 ## NOTES
 There are some notes that I want to add related to the test itself:
 - The coverage is limited due to deadline, I check some scenarios as login/logout, check the elements are showed properly in main screen, the navigation of the top bar just to show that clicking or swipping works, testing the notifications toggle buttons and added just a small script to show that the generation fo a random user is possible to check the path of wrong credentials.
